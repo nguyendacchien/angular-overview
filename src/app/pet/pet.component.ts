@@ -15,11 +15,6 @@ export class PetComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // updateName(name){
-  //   this.petName = name;
-  // }
-  // updateImage(image){
-  //   this.petImage = image;
-  // }
+
 
 }
