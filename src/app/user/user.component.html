@@ -1,0 +1,29 @@
+
+  <div class="container card-body mt-2">
+    <h2>list User</h2>
+    <table class="table table-striped text-center">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Image</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Address</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users; let i = index ">
+      <th scope="row">{{i +1}}</th>
+      <td>{{user.name}}</td>
+      <td><img [src]="user.image" width="70"></td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.address}}</td>
+      <td><button class="btn btn-danger" (click)="deleteUser(i)">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
