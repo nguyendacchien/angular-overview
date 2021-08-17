@@ -8,6 +8,7 @@ import {FormsModule} from "@angular/forms";
 import { PetComponent } from './pet/pet.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserComponent } from './user/user.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserComponent } from './user/user.component';
     FontSizeEditorComponent,
     PetComponent,
     NavbarComponent,
-    UserComponent
+    UserComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,

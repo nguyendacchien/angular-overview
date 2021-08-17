@@ -1,0 +1,37 @@
+<div class="container my-4">
+  <div class="calculator card">
+    <div class="input-group">
+      <input type="text" class="calculator-screen z-depth-1" [(ngModel)]="input">
+      <div class="calculator-screen z-depth-1">{{result}}</div>
+    </div>
+    <div class="calculator-keys">
+
+      <button (click)="clickCell('+')" class="operator btn btn-info">+</button>
+      <button (click)="clickCell('-')" class="operator btn btn-info">-</button>
+      <button (click)="clickCell('*')" class="operator btn btn-info">&times;</button>
+      <button (click)="clickCell('/')" class="operator btn btn-info">&divide;</button>
+
+      <button (click)="clickCell('7')" class="btn btn-secondary waves-effect">7</button>
+      <button (click)="clickCell('8')" class="btn btn-secondary waves-effect">8</button>
+      <button (click)="clickCell('9')" class="btn btn-secondary waves-effect">9</button>
+
+
+      <button (click)="clickCell('4')" class="btn btn-secondary waves-effect">4</button>
+      <button (click)="clickCell('5')" class="btn btn-secondary waves-effect">5</button>
+      <button (click)="clickCell('6')" class="btn btn-secondary waves-effect">6</button>
+
+
+      <button (click)="clickCell('1')" class="btn btn-secondary waves-effect">1</button>
+      <button (click)="clickCell('2')" class="btn btn-secondary waves-effect">2</button>
+      <button (click)="clickCell('3')" class="btn btn-secondary waves-effect">3</button>
+
+
+      <button (click)="clickCell('0')" class="btn btn-secondary waves-effect">0</button>
+      <button (click)="clickCell('.')" class="decimal function btn btn-secondary">.</button>
+      <button (click)="delete()" class="all-clear function btn btn-danger btn-sm">AC</button>
+
+      <button (click)="getResult()" class="equal-sign operator btn btn-success">=</button>
+
+    </div>
+  </div>
+</div>
